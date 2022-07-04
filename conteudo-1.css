@@ -26,7 +26,7 @@ color: var(--texto);
 
 .botao:hover {
     background: black;
-    color: rgb(255, 255, 255);
+    color: var(--cor-primaria);
 }
 
 .introducao {

@@ -15,7 +15,7 @@
     --fundo-1:rgb(21, 21, 21);
     --fundo-2:black;
     --texto:white;
-    --onda: url("/img/onda-escura.svg");
+    --onda: url("./img/onda-escura.svg");
 
 }
 
