@@ -1,0 +1,62 @@
+.detalhe {
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding: 2.5rem;
+    align-self: center;
+    text-align: center;
+    background-image: var(--onda);
+    color: #c3c3c3;
+    /* word-break: break-all; */
+}
+
+.vantagens {
+padding: 40px;
+    background: var(--fundo-2);
+
+}
+
+.vantagens-list {
+    display: grid;
+grid-template-columns: auto 1fr;
+gap: 10px 20px;
+padding: 20px;
+color: var(--texto);
+background: var(--fundo-2);
+}
+
+.vantagens-list p {
+    grid-column: 2;
+    font-size: .9rem;
+    color: #ffffff;
+  
+}
+
+.vantagens-list h3 {
+   justify-items: center;
+   color:var(--cor-primaria)
+}
+
+.vantagens-list:hover {
+    border-left: var(--cor-primaria) solid 4px;
+  }
+
+  .vantagens-list:nth-child(odd) {
+      background: var(--fundo-1);
+  }
+
+  @media (max-width: 1000px) {
+    .conteudo-itens {
+        grid-template-columns: 1fr;
+    }
+    .detalhe {
+        text-align: center;
+        display: inline-block;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .detalhe {
+        font-size: 3rem;
+    }
+}

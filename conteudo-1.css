@@ -1,0 +1,83 @@
+.introducao h1{
+    font-size: 2rem;
+    font-family: 'poppins';
+line-height: 2rem;
+color: var(--texto);
+}
+
+
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+   background: #1e1e1e;
+}
+
+
+.botao {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    
+    border-radius: 4px;
+    color: #ffffff;
+    border: var(--cor-primaria) solid 1px;
+}
+
+.botao:hover {
+    background: black;
+    color: rgb(255, 255, 255);
+}
+
+.introducao {
+    text-align: start;
+    background: var(--fundo-2);
+position: relative;
+    padding: 40px;
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    justify-items: start;
+}
+
+.introducao p{
+    font-size: 1.1rem;
+    max-width: 40ch;
+    color: var(--texto);
+    color: #a1a1a1;
+}
+
+.introducao::before {
+    content: "";
+    width: 60px;
+    height: 5px;
+    background-color: var(--cor-primaria);
+    position: absolute;
+    right: -30px;
+    top: 30px;
+
+}
+
+.img-cover img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 600px) {
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao::before {
+        display: none;
+    }
+
+
+   
+    
+    .introducao {
+        justify-items: start;
+        text-align: left;
+    }
+}

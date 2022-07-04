@@ -1,0 +1,12 @@
+.rodape {
+    background: var(--fundo-2);
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    color: var(--texto);
+}
+
+.rodape h3 {
+    color: var(--cor-primaria);
+}

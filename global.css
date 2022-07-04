@@ -1,0 +1,60 @@
+/* 
+ {modo claro!}
+:root {
+    --cor-primaria: #04CC3A;
+    --cor-primaria-escura: #10a939;
+    --fundo-1: #e1e1e1;
+    --fundo-2: white;
+--texto:rgb(0, 0, 0);
+--detalhe:#9e9e9e;
+}
+*/
+  :root {
+    --cor-primaria: #04CC3A;
+    --cor-primaria-escura: #10a939;
+    --fundo-1:rgb(21, 21, 21);
+    --fundo-2:black;
+    --texto:white;
+    --onda: url("/img/onda-escura.svg");
+
+}
+
+
+
+
+body{
+    display: grid;
+    margin: 0px;
+    justify-items: center;
+    gap: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 60px;
+    background-color: var(--fundo-1);
+
+}
+
+h1, h2, h3, p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+img {
+    display: block;
+   max-width: 100%;
+    
+}
+
+@media (max-width: 600px) {
+    body {
+        gap: 30px;
+        margin-top: 30px;
+        }
+}
